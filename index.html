@@ -14,7 +14,11 @@
 	<canvas id="canvas"></canvas>	
     <input type="button" id="startBtn" value="Start" onClick="startGame()"/>
     <input type="button" id="pauseBtn" value="Pause" onClick="gamePause()"/>
-    <input type="button" id="stepBtn" value="Step" onClick="step()"/>
+    <input type="button" id="stepBtn" value="Step" onClick="doStep()"/>
+    <input type="range" min="1" max="100" value="100" class="slider" id="speedSlider" onchange="getSpeedFromSlider()" oninput="getSpeedFromSlider"/>
+    <!-- <input type="button" id="speedBtnDown" value="Speed  -" onClick="lessSpeed()"/> -->
+    <div><span id="speedDisplay"></span></div>
+    <!-- <input type="button" id="speedBtnUp" value="Speed +" onClick="moreSpeed()"/> -->
     <script src="index.js"></script>
   </body>
 </html>
