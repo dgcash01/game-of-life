@@ -19,9 +19,9 @@ let speedPercentage = 100;
 function startGame() {
   // starting and restarting the game
   getSpeedFromSlider();
-  initializeCanvas();
   let gridWidth = size / scale;
   let gridHeight = size / scale;
+  initializeCanvas();
   let cells = createCells(gridWidth, gridHeight);
   cells = randomizeCells(cells);
   startBtn = document.querySelector("#startBtn");
@@ -82,8 +82,6 @@ function gamePause() {
     paused = true;
     pauseBtn.value = "Unpause"
   } else {
-    let gridWidth = size / scale;
-    let gridHeight = size / scale;
     paused = false;
     pauseBtn.value = "Pause"
     runSteps(cellsSaved);
