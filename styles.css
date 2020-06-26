@@ -11,6 +11,7 @@ body {
 #startBtn {
     position: absolute;
     border-radius: 50px;
+    border: none;
     top: 300px;
     left: 1000px;
     width: 200px;
@@ -76,4 +77,12 @@ body {
     top: 100px;
     left: 1040px;
     font-size: 20px;
+  }
+
+  #golRules {
+    position: absolute;
+    color: lightgray;
+    font-size: 18px;
+    top: 600px;
+    left: 1000px;
   }
