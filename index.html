@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style>
+<style>
 
-  </style>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game of Life</title>
-    <link rel="stylesheet" href="styles.css">
+</style>
 
-  </head>
-  <body>
-    <div id="golRules">
-         GAME OF LIFE RULES! <br>
-      <br>         
-      1. Any live cell with fewer than two live neighbours dies, as if by underpopulation. <br>
-      <br>
-      2. Any live cell with two or three live neighbours lives on to the next generation. <br>
-      <br>
-      3. Any live cell with more than three live neighbours dies, as if by overpopulation. <br>
-      <br>
-      4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
-    </div>
-  <canvas id="canvas"></canvas>	
-    <div id="sliderName">Speed Slider</div>
-    <input type="button" id="startBtn" value="Start" onClick="startGame()"/>
-    <input type="button" id="pauseBtn" value="Pause" onClick="gamePause()"/>
-    <input type="button" id="stepBtn" value="Step" onClick="doStep()"/>
-    <input type="range" min="1" max="100" value="100" class="slider" id="speedSlider" onchange="getSpeedFromSlider()" oninput="getSpeedFromSlider"/>
-    <!-- <input type="button" id="speedBtnDown" value="Speed  -" onClick="lessSpeed()"/> -->
-    <div><span id="speedDisplay"></span></div>
-    <!-- <input type="button" id="speedBtnUp" value="Speed +" onClick="moreSpeed()"/> -->
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Life</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div id=titleBanner>Conway's Game of Life</div>
+  <img id="imgSizer" src="https://i.ytimg.com/vi/y5ARAxW2k_4/maxresdefault.jpg" alt="John Conway">
+  <div id="golRules">
+    GAME OF LIFE RULES! <br>
+    <br>
+    1. Any live cell with fewer than two live neighbours dies, as if by underpopulation. <br>
+    <br>
+    2. Any live cell with two or three live neighbours lives on to the next generation. <br>
+    <br>
+    3. Any live cell with more than three live neighbours dies, as if by overpopulation. <br>
+    <br>
+    4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+  </div>
+  <canvas id="canvas"></canvas>
+  <div id="sliderName">Speed Slider</div>
+  <input type="button" id="startBtn" value="Start" onClick="startGame()" />
+  <input type="button" id="pauseBtn" value="Pause" onClick="gamePause()" />
+  <input type="button" id="stepBtn" value="Step" onClick="doStep()" />
+  <input type="range" min="1" max="100" value="100" class="slider" id="speedSlider" onchange="getSpeedFromSlider()"
+    oninput="getSpeedFromSlider" />
+  <!-- <input type="button" id="speedBtnDown" value="Speed  -" onClick="lessSpeed()"/> -->
+  <div><span id="speedDisplay"></span></div>
+  <!-- <input type="button" id="speedBtnUp" value="Speed +" onClick="moreSpeed()"/> -->
+  <script src="index.js"></script>
+</body>
+
 </html>
